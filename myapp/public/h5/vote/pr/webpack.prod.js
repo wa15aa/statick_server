@@ -7,7 +7,7 @@ module.exports = merge(common,{
     mode: 'production',
     devtool: 'source-map',
     output:{
-        publicPath: 'http://mat1.gtimg.com/news/images/static/2018/vote/new/'
+        publicPath: ''
     },
     optimization:{
         splitChunks: {
