@@ -1,0 +1,64 @@
+body {
+  background: #23262B; }
+
+.userMess {
+  color: #fff;
+  text-align: center;
+  padding-top: 0.5rem;
+  margin-bottom: 0.6rem; }
+  .userMess .usePicBox {
+    width: 1.35rem;
+    height: 1.35rem;
+    display: inline-block;
+    position: relative; }
+    .userMess .usePicBox img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0; }
+  .userMess .usePic {
+    height: 1.35rem;
+    margin-bottom: 0.01rem; }
+  .userMess .useName {
+    height: 0.67rem;
+    line-height: 0.67rem;
+    font-size: 0.48rem; }
+
+.closeBut {
+  width: 1.2rem;
+  height: 1.2rem; }
+
+.usePic {
+  height: 0.8rem; }
+
+.userMess {
+  margin-bottom: 0.04rem; }
+
+.usePicBox {
+  width: 0.8rem;
+  height: 0.8rem; }
+
+.getNum {
+  font-size: 0.36rem;
+  color: #D9AF00; }
+
+.useNameBox span {
+  display: inline-block;
+  vertical-align: end;
+  font-size: 0.48rem; }
+
+.useNameBox .bigFont {
+  font-size: 0.58rem; }
+
+.prize {
+  text-align: center;
+  border: none; }
+  .prize .prizeImg {
+    width: 60%;
+    margin-bottom: 0.66rem; }
+  .prize .penguinImg {
+    width: 60%; }
+
+
+/*# sourceMappingURL=share.css.map*/

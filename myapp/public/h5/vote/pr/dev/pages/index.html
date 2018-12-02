@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+
+    <meta name="author" content="sina_mobile">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>雷军、董明珠10亿赌局决战在即！</title>
+    ${require('./common/setRem.html')}
+   
+</head>
+
+<body>
+
+    <!-- 首屏动画 -->
+
+
+
+    
+${require('./conmponent/front_screen.html')}
+${require('./conmponent/video.html')}
+${require('./conmponent/vote.html')}
+            <!-- <div class="swiper-slide">
+                ${require('./conmponent/video.html')}
+            </div>
+            <div class="swiper-slide">
+                ${require('./conmponent/vote.html')}
+            </div> -->
+       
+    <!-- 微信分享js -->
+    <span class="start"><b></b></span>
+
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript">
+        var jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
+        next = 3;
+        currentTime = 10;
+    </script>
+    <!-- <script type="text/javascript" src="../piblick/js/share.js"></script> -->
+   
+
+    <script>
+        var shareData = {
+            title: '雷军、董明珠10亿赌局决战在即！快来为Ta加油打气吧！',
+            /*分享标题*/
+            desc: '雷军、董明珠10亿赌局决战在即！快来为Ta加油打气吧！',
+            /*分享描述*/
+            img: "https://puui.qpic.cn/vupload/0/20181127_1543287924498_vnyg1etpue.jpeg/0",
+            /*分享图片*/
+            link: window.location.href
+        };
+    </script>
+</body>
+
+</html>

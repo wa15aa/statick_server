@@ -1,0 +1,69 @@
+.prize{
+    margin: 0 0.24rem;
+    border-left: 1px solid #07C5F6;
+    padding-left: 0.19rem;
+    position: relative;
+    .end_point{
+        width: 0.1rem;
+        height: 0.1rem;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: -0.05rem;
+        bottom: 0;
+    }
+    ul{
+       position: relative;
+       top: -0.3rem;
+    }
+    li{
+        position: relative;
+        margin-bottom: 0.15rem;
+        .point{
+            width: 0.1rem;
+            height: 0.1rem;
+            background: #fff;
+            border: 0.05rem solid #1ECAF7;
+            border-radius: 50%;
+            position: absolute;
+            left: -0.29rem;
+            top: 0.11rem;
+        }
+        .date{
+            color: #FFFFFF; font-size: 0.32rem; line-height: 0.45rem; height: 0.45rem; margin-bottom: 0.07rem;
+        }
+        .prize_conteng{
+            padding: 0.14rem 0.31rem;
+            background: #fff 50%;
+            border-radius: 5px;
+            font-size: 0.32rem;
+            line-height: 0.45rem;
+        }
+    }
+   
+}
+.noMess{
+    text-align: center;
+    margin-bottom: 0.1rem;
+    display: none;
+    font-size: 0.24rem;
+    color: #fff;
+}
+.noprize{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.48rem;
+    color: #fff;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    img{
+        width: 80%;
+    }
+}
+.noprizeBg{
+    width: 82%; position: absolute;
+    left: 9%; bottom: 0; 
+    display: none;
+}

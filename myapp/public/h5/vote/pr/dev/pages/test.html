@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="aa">test</div>
+
+    
+
+    <script>
+        $(function () {
+
+            $('.aa').click(function () {
+
+                $.ajax({
+                    url: 'http://panshi.qq.com/v2/vote/23212948/submit',
+                    type: 'POST',
+                    data: {
+                        answer: {
+                            "13311692": {
+                                "selected": [27056208]
+                            }
+                        },
+                        login: 1,
+                        source: 1,
+                        format: 'script',
+                        callback: 'parent.AppPlatform.Survey.Digg.ReceiveDiggResult',
+                        g_tk: 803125116
+                    },
+                    success(e){
+                        debugger;
+                    }
+                })
+
+                return false;
+
+            });
+
+        });
+    </script>
+
+
+    <style>
+        .digg {
+            margin: auto;
+            font-family: "Microsoft Yahei";
+            display: table;
+        }
+
+        .digg .option {
+            margin: 5px;
+            float: left;
+            width: 70px;
+            height: 63px;
+            background: #379BE9;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .digg .option:hover {
+            background: #3DAAFF;
+        }
+
+        .digg .count {
+            text-align: center;
+            font-family: "Verdana";
+            font-size: 16px;
+            color: #efefef;
+            line-height: 40px
+        }
+
+        .digg .digg {
+            text-align: center;
+            font-size: 12px;
+            color: #eee;
+            line-height: 20px;
+            height: 20px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .digg .digg a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .digg .digg a:hover {
+            text-decoration: none;
+        }
+    </style>
+    <div class="clearfix"></div>
+    <table border="0" align="center">
+        <tr>
+            <td>
+                <div class="digg">
+
+                    <div class="option">
+                        <div class="count" id="apps_svy_opt_count_23212948_0">0</div>
+                        <div class="digg" id="apps_svy_opt_title_23212948_0" doneText="1">1</div>
+                    </div>
+
+                    <div class="option">
+                        <div class="count" id="apps_svy_opt_count_23212948_1">0</div>
+                        <div class="digg" id="apps_svy_opt_title_23212948_1" doneText="2">2</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script language="javascript">
+        var JsLoader = {
+            load: function (sUrl, fCallback) {
+                var _script = document.createElement("script");
+                _script.setAttribute("type", "text/javascript");
+                _script.setAttribute("src", sUrl);
+                document.getElementsByTagName("head")[0].appendChild(_script);
+
+                if (/msie/.test(window.navigator.userAgent.toLowerCase())) {
+                    _script.onreadystatechange = function () {
+                        if (this.readyState == "loaded" || this.readyState == "complete") {
+                            fCallback();
+                        }
+                    };
+                } else if (/gecko/.test(window.navigator.userAgent.toLowerCase())) {
+                    _script.onload = function () {
+                        fCallback();
+                    };
+                } else {
+                    fCallback();
+                }
+            }
+        };
+
+        if (typeof jQuery == "undefined") {
+            JsLoader.load("http://mat1.gtimg.com/www/panshi/dist/js/jquery.js", function () {});
+        }
+        JsLoader.load("http://mat1.gtimg.com/www/panshi/js/digg2.js", function () {
+            AppPlatform.Survey.Digg.init({
+                PrjId: 23212948,
+                /*调查ID*/
+                SubjId: 13311692,
+                /*问题ID*/
+                DiggMode: 0,
+                /*0：单选模式 1：多选模式*/
+                ShowResult: 1,
+                /*｛'选项ID': '索引'｝，快速评价列表，可以根据需要删减*/
+                OptIdObject: {
+                    "27056208": 0,
+                    "27056209": 1
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
