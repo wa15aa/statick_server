@@ -31,8 +31,8 @@
 
 function getInfo(){ 
      var s = "";   
-      s += " 网页可见区域宽："+ document.body.clientWidth+"<br />";    
-      s += " 网页可见区域高："+ document.body.clientHeight+"<br />";    
+      s += " 网页可见区域宽："+ document.documentElement.clientWidth+"<br />";    
+      s += " 网页可见区域高："+ document.documentElement.clientHeight+"<br />";    
       s += " 网页可见区域宽："+ document.body.offsetWidth + " (包括边线和滚动条的宽)"+"<br />";    
       s += " 网页可见区域高："+ document.body.offsetHeight + " (包括边线的宽)"+"<br />";    
       s += " 网页正文全文宽："+ document.body.scrollWidth+"<br />";    
