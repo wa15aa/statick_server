@@ -42,14 +42,14 @@ body {
 .clearfix {
   zoom: 1; }
 
-.swiper-container, .fscreen, .loading {
+.swiper-container, .fscreen, .loading, .result {
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   overflow: hidden; }
-  .swiper-container .bg, .fscreen .bg, .loading .bg {
+  .swiper-container .bg, .fscreen .bg, .loading .bg, .result .bg {
     width: 100%; }
 
 .swiper-slide {
@@ -58,7 +58,6 @@ body {
   position: relative; }
 
 .loading {
-  display: none;
   background: #000; }
   .loading .bg {
     width: 100%; }
@@ -258,6 +257,109 @@ body, html {
       font-size: 0.4rem; }
     .song_name .guess_name .hasSelect {
       background: #ffdb6f; }
+
+.result .bg {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.redar_warp {
+  width: 7.06rem;
+  height: 7.05rem;
+  background: url(../img/redarbox.png) center center no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  position: relative; }
+  .redar_warp .logo {
+    width: 0.82rem;
+    position: absolute;
+    left: -0.05rem;
+    top: -0.3rem; }
+    .redar_warp .logo img {
+      width: 100%; }
+  .redar_warp .redar_box {
+    text-align: center;
+    padding-top: 1rem; }
+    .redar_warp .redar_box canvas {
+      display: inline-block; }
+
+.button_warp {
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  text-align: center; }
+  .button_warp div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.9rem;
+    height: 0.88rem;
+    border: 1px solid #eed386;
+    text-align: center;
+    font-size: 0.36rem;
+    line-height: 0.88rem;
+    margin: 0 0.1rem;
+    color: #f2d57a; }
+
+.poster_warp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  left: 0;
+  top: 0; }
+  .poster_warp .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); }
+  .poster_warp .share_point {
+    width: 0.85rem;
+    top: 0.2rem;
+    right: 0.4rem;
+    display: none;
+    position: absolute; }
+  .poster_warp .poster_box {
+    width: 70%;
+    left: 15%;
+    position: absolute;
+    top: 10%;
+    background: #eeedde;
+    text-align: center;
+    display: inline-block; }
+    .poster_warp .poster_box .close_but {
+      width: 0.59rem;
+      height: 0.57rem;
+      position: absolute;
+      right: 0;
+      top: -0.57rem; }
+    .poster_warp .poster_box .piw {
+      width: 96%;
+      margin-top: 5%;
+      margin-left: 2%; }
+    .poster_warp .poster_box .poster_img {
+      width: 100%;
+      margin-bottom: 5%; }
+    .poster_warp .poster_box .post_but {
+      position: relative;
+      height: 1rem;
+      margin-bottom: 0.2rem; }
+      .poster_warp .poster_box .post_but div {
+        width: 2.43rem;
+        height: 1rem;
+        background: url(../img/psbbg.png);
+        background-size: 100% auto;
+        position: absolute;
+        top: 0;
+        font-size: 0.3rem;
+        text-align: center;
+        line-height: 0.78rem;
+        color: #ffffff; }
+      .poster_warp .poster_box .post_but .stone {
+        left: 0; }
+      .poster_warp .poster_box .post_but .share {
+        right: 0; }
 
 
 /*# sourceMappingURL=index.css.map*/
