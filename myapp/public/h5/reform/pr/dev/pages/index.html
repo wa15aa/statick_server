@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+
+    <meta name="author" content="sina_mobile">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>我的时光唱片</title>
+    <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/jquery.js"></script>
+    <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/canvas_x.js"></script>
+    ${require('./common/setRem.html')}
+    <script>
+        var userMess = {
+            prizeNum: 1000,
+            bonus: 2000,
+            nickName: 'Aaron.White',
+            picLink: './img/timg.jpeg',
+            openId: 'o34xe0-ifZ3fnjGHHnB_Us9U_jLc'
+        }
+        var InterfacePrize = 'http://piu.qq.com/wechat/web/api/my/rewards';
+    </script>
+</head>
+
+<body>
+
+       
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                ${require('./conmponent/fscreen.html')}
+            </div>
+            <div class="swiper-slide">
+                ${require('./conmponent/games.html')}
+            </div>
+            <div class="swiper-slide">
+                    ${require('./conmponent/result.html')}
+            </div>
+        </div>
+    </div>
+
+    ${require('./conmponent/loading.html')}
+    <!-- 海报模块 -->
+    ${require('./conmponent/poster.html')}
+
+    <!-- 微信分享js -->
+
+
+
+
+
+
+
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript">
+        var jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
+    </script>
+</body>
+
+</html>

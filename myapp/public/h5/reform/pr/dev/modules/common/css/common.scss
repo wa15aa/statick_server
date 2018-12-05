@@ -1,0 +1,194 @@
+.swiper-container,.fscreen,.loading{
+    width: 100%; height: 100%; position: absolute; left: 0; top: 0;
+    overflow:hidden;
+    .bg{
+        width: 100%;
+    }
+}
+.swiper-slide{
+    width: 100%; height: 100%; position: relative;
+}
+// loading页样式
+
+.loading{
+
+    display: none;
+    background: #000;
+    .bg{
+        width: 100%;
+    }
+}
+body,html{
+    background: #19170d; width: 100%; height: 100%;
+}
+
+.loading{
+    height: 100%;
+}
+
+.loading_warp{
+    width: 100%; position: absolute; top: 50%;
+    .loading_box{
+        width: 50%; position: absolute; top: 0; height: 1px; background: #696969; left: 25%;
+        .loading_progress{
+            position: absolute; height: 5px; left: 0; top: -2px;
+            background:url('../../../images/loading_bar_03.jpg') center center repeat-x;
+            width: 0%; border-radius: 2px;
+        }
+
+        .loading_text{
+            width: 26%; position: absolute;
+            left: 37%; bottom: -0.8rem;
+        }
+    }
+}
+
+.news_logo{
+    width: 20%; position: absolute; left: 40%;
+    bottom: 5%;
+    img{
+        width: 100%;
+    }
+}
+
+// loading页样式end
+
+// 封面页样式
+.fscreen{
+    // display: none;
+   .fstips{
+       width: 12%; position: absolute; left: 44%; bottom: 15%;
+   }
+   .post_news_logo{
+       width: 18%; position: absolute; left: 41%; bottom: 10%;
+   }
+}
+
+.swipeAnimate{-webkit-animation:swipeAnimate 2s ease-in-out infinite;-moz-animation:swipeAnimate 2s ease-in-out infinite;animation:swipeAnimate 2s ease-in-out infinite}
+@-webkit-keyframes swipeAnimate{0%{opacity:0}
+    50%{opacity:.8}
+    100%{opacity:0;-webkit-transform:translate3d(0,-20px,0);-moz-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}
+}
+@-moz-keyframes swipeAnimate{0%{opacity:0}
+    50%{opacity:.8}
+    100%{opacity:0;-webkit-transform:translate3d(0,-20px,0);-moz-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}
+}
+@keyframes swipeAnimate{0%{opacity:0}
+    50%{opacity:.8}
+    100%{opacity:0;-webkit-transform:translate3d(0,-20px,0);-moz-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}
+}
+
+// 唱片机页样式
+
+.games{
+    .logo{
+        width: 0.82rem;
+        height: 1.05rem;
+        position: absolute;
+        left: 10%;
+        top: 0.24rem;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .time{
+        width: 1.03rem;
+        height: 1.03rem;
+        border-radius: 50%;
+        position: absolute;
+        background:rgba(234,88,0,0.5);
+        right: 10%;
+        top: 0.24rem;
+        text-align: center;
+        line-break: 1.03rem;
+        font-size: 0.5rem;
+        color: #ffffff;
+        line-height: 1.03rem;
+    }
+    .jukebox{
+        width: 6.21rem; height: 6.21rem;
+        background: url('../../../images/jukebox.png') center center no-repeat;
+        background-size: 100% auto;
+        position: absolute; left: 0.65rem; top: 12%;
+
+        .cp{
+            width: 4.18rem; position: absolute; left: 0.66rem; top: 0.72rem;
+
+            animation:cp 5s linear infinite;
+        }
+        .cdb{
+            position: absolute;
+            width: 2.24rem;
+            height: 3.68rem;
+            right: 0.8rem;
+            top: 0.6rem;
+        }
+    }
+}
+
+@keyframes cp{
+    0%{ transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.song_name{
+    position: absolute;
+    width: 100%;
+    top: 58%;
+    .enter_box{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.3rem;
+        font-size: 0;
+        .item{
+            width: 0.56rem; height: 0.56rem; background: #fff; border: 1px solid #8a8000;
+            border-radius: 5px;
+            display: inline-block; vertical-align: middle;
+            margin: 0 0.05rem;
+            text-align: center;
+            line-height: 0.56rem;
+            font-size: 0.35rem;
+            color: #000;
+        }
+
+        .name_err{
+            background: rgba(192,72,0,0.5);
+            border: 1px solid transparent;
+        }
+
+        .refresh{
+            width: 0.39rem; height: 0.39rem;
+            background: url('../../../images/web/refresh.png') center center no-repeat;
+            background-size: 100% auto;
+            display: inline-block; vertical-align: middle; 
+            margin: 0 0.05rem;
+        }
+        div{
+            margin: 0 0.02rem;
+        }
+    }
+
+    .guess_name{
+        width: 80%;
+        margin-left: 10%;
+
+        .item{
+            width: 0.74rem; height: 0.74rem;
+            text-align: center;
+            line-height: 0.74rem;
+            margin: 0.1rem;
+            margin-top: 0;
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid #ffdb6f;
+            display: inline-block; vertical-align: middle;
+            margin-bottom: 0.2rem;
+            font-size: 0.4rem;
+        }
+        .hasSelect{
+            background: #ffdb6f;
+        }
+    }
+}
