@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+
+    <meta name="author" content="sina_mobile">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="">
+    <title>我的时光唱片</title>
+    <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/jquery.js"></script>
+    <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/canvas_x.js"></script>
+    <script>
+        (function () {
+            var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
+            rootrem = clientWidth * 50 / 375;
+            (document.documentElement || document.body.parentNode).style.fontSize = rootrem + "px";
+        })();
+    </script>
+    <script>
+        var userMess = {
+            prizeNum: 1000,
+            bonus: 2000,
+            nickName: 'Aaron.White',
+            picLink: './img/timg.jpeg',
+            openId: 'o34xe0-ifZ3fnjGHHnB_Us9U_jLc'
+        }
+        var InterfacePrize = 'http://piu.qq.com/wechat/web/api/my/rewards';
+    </script>
+<link href="/wechat/css/index.css" rel="stylesheet"></head>
+
+<body>
+
+       
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="fscreen">
+    <img src="/wechat/img/postersr_02.png" class="bg" alt="">
+
+    <img src="/wechat/img/point.png" alt="" class="swipeAnimate fstips">
+    <img src="/wechat/img/post_news_logo.png" class="post_news_logo" alt="">
+</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="games">
+
+    <img src="/wechat/img/game_bg_02.png" class="bg" alt="">
+
+    <div class="logo">
+        <img src="/wechat/img/40.png" alt="">
+    </div>
+
+    <div class="time">
+        60
+    </div>
+
+    <div class="jukebox">
+        <img src="/wechat/img/cp.png" class="cp" alt="">
+        <img src="/wechat/img/cdb.png" class="cdb" alt="">
+    </div>
+
+    <div class="song_name">
+
+        <div class="enter_box">
+        </div>
+
+        <div class="guess_name">
+        </div>
+
+    </div>
+
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading">
+    <img src="/wechat/img/loading_02.jpg" class="bg" alt="">
+
+    <div class="loading_warp">
+        <div class="loading_box">
+            <div class="loading_progress">
+                   
+            </div>
+
+            <div class="loading_text">
+                <img src="/wechat/img/Loading.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="news_logo">
+        <img src="/wechat/img/news_logo.png" alt="">
+    </div>
+</div>
+    <!-- 海报模块 -->
+    <div>
+    <!-- <img id="test" />
+
+    <a href="" download="true" id="down"></a> -->
+</div>
+
+<style>
+    #test{
+        width: 100%;
+    }
+
+    #down{
+        width: 100px; height: 100px; background: red; display: block;
+    }
+
+</style>
+
+<script>
+
+    var sharStr = '那个属于你的时代，分享这张属于你的唱片。';
+    var songMess = '1980 / 叶丽仪';
+    var songName = '《上海滩》';
+    // 高级绘制
+    canvas_x.makeImage({
+        type: 'url',
+        parts: [{
+                type: 'image',
+                url: 'https://puui.qpic.cn/vupload/0/20181203_1543832523447_28lv9qnkldq.jpeg/0',
+                width: 750,
+                height: 1334
+            },{
+                type: 'image',
+                url: 'https://puui.qpic.cn/vupload/0/20181203_1543840422147_h2w6mw102xf.jpeg/0',
+                width: 500,
+                height: 500,
+                x:125,
+                y:493
+            },
+            // {
+            //     type: 'image',
+            //     url: './assets/avatar.jpg',
+            //     width: 150,
+            //     height: 150,
+            //     radius: 1,
+            //     padding: 5,
+            //     background: '#fff',
+            //     x: 75,
+            //     y: 20
+            // },
+            {
+                type: 'qrcode',
+                text: window.location.href,
+                x: 40,
+                y: 1077,
+                width: 157,
+                height: 157,
+                padding: 2,
+                background: '#fff',
+                level: 3
+            },
+            {
+                type: 'text',
+                text: sharStr.slice(0,14),
+                x: 224,
+                y: 1077,
+                color: '#abcdef',
+                width:10,
+                size: '34px',
+                color:'#eeedde',
+                bold: true
+            },
+            {
+                type: 'text',
+                text: sharStr.slice(14),
+                x: 224,
+                y: 1141,
+                color: '#abcdef',
+                width:10,
+                size: '28px',
+                color:'#eeedde',
+                bold: true
+            },
+            {
+                type: 'text',
+                text: songMess,
+                x: 375,
+                y: 310,
+                color: '#abcdef',
+                width:10,
+                size: '28px',
+                color:'#eeedde',
+                align:'center'
+            },{
+                type: 'text',
+                text: songName,
+                x: 375,
+                y: 346,
+                color: '#abcdef',
+                width:10,
+                size: '28px',
+                color:'#eeedde',
+                align:'center'
+            }
+        ],
+        width: 750,
+        height: 1334
+    }, (err, data) => {
+        // document.getElementById('test').src = data
+
+        // document.getElementById('down').href = data
+    })
+</script>
+
+    <!-- 微信分享js -->
+
+
+
+
+
+
+
+    <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript">
+        var jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
+    </script>
+<script type="text/javascript" src="/wechat/js/7b867_index_bundle.js"></script></body>
+
+</html>
