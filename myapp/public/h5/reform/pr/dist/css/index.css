@@ -166,49 +166,49 @@ body, html {
     -moz-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0); } }
 
-.games .logo {
-  width: 0.82rem;
-  height: 1.05rem;
-  position: absolute;
-  left: 10%;
-  top: 0.24rem; }
-  .games .logo img {
-    width: 100%; }
-
-.games .time {
-  width: 1.03rem;
-  height: 1.03rem;
-  border-radius: 50%;
-  position: absolute;
-  background: rgba(234, 88, 0, 0.5);
-  right: 10%;
-  top: 0.24rem;
-  text-align: center;
-  line-break: 1.03rem;
-  font-size: 0.5rem;
-  color: #ffffff;
-  line-height: 1.03rem; }
-
-.games .jukebox {
-  width: 6.21rem;
-  height: 6.21rem;
-  background: url(../img/jukebox.png) center center no-repeat;
-  background-size: 100% auto;
-  position: absolute;
-  left: 0.65rem;
-  top: 12%; }
-  .games .jukebox .cp {
-    width: 4.18rem;
+.games {
+  position: relative; }
+  .games .logo {
+    width: 0.82rem;
+    height: 1.05rem;
     position: absolute;
-    left: 0.66rem;
-    top: 0.72rem;
-    animation: cp 5s linear infinite; }
-  .games .jukebox .cdb {
+    left: 10%;
+    top: 0.24rem; }
+    .games .logo img {
+      width: 100%; }
+  .games .time {
+    width: 1.03rem;
+    height: 1.03rem;
+    border-radius: 50%;
     position: absolute;
-    width: 2.24rem;
-    height: 3.68rem;
-    right: 0.8rem;
-    top: 0.6rem; }
+    background: rgba(234, 88, 0, 0.5);
+    right: 10%;
+    top: 0.24rem;
+    text-align: center;
+    line-break: 1.03rem;
+    font-size: 0.5rem;
+    color: #ffffff;
+    line-height: 1.03rem; }
+  .games .jukebox {
+    width: 6.21rem;
+    height: 6.21rem;
+    background: url(../img/jukebox.png) center center no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 0.65rem;
+    top: 12%; }
+    .games .jukebox .cp {
+      width: 4.18rem;
+      position: absolute;
+      left: 0.66rem;
+      top: 0.72rem;
+      animation: cp 5s linear infinite; }
+    .games .jukebox .cdb {
+      position: absolute;
+      width: 2.24rem;
+      height: 3.68rem;
+      right: 0.8rem;
+      top: 0.6rem; }
 
 @keyframes cp {
   0% {
@@ -219,7 +219,8 @@ body, html {
 .song_name {
   position: absolute;
   width: 100%;
-  top: 58%; }
+  top: 58%;
+  z-index: 100; }
   .song_name .enter_box {
     width: 100%;
     text-align: center;
@@ -271,10 +272,13 @@ body, html {
     .song_name .guess_name .hasSelect {
       background: #ffdb6f; }
 
-.result .bg {
+.result .bgbox {
   position: absolute;
+  width: 100%;
   left: 0;
   top: 0; }
+  .result .bgbox .bg {
+    width: 100%; }
 
 .redar_warp {
   width: 7.06rem;
@@ -314,6 +318,79 @@ body, html {
     margin: 0 0.1rem;
     color: #f2d57a; }
 
+.song_sheet_warp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  left: 0;
+  top: 0; }
+  .song_sheet_warp .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); }
+  .song_sheet_warp .song_sheet_box {
+    background: #111111;
+    padding: 0.25rem;
+    padding-top: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    margin-top: 2.5rem; }
+    .song_sheet_warp .song_sheet_box div {
+      width: 6.06rem;
+      margin: 0 auto; }
+    .song_sheet_warp .song_sheet_box .song_content {
+      height: 5rem;
+      width: 5.46rem;
+      background: url(../img/6689.png) 0 0 no-repeat;
+      background-size: 100% auto;
+      padding: 0.4rem 0.3rem;
+      background-color: #eeedde;
+      overflow: hidden;
+      margin-bottom: 0.2rem; }
+      .song_sheet_warp .song_sheet_box .song_content div {
+        text-align: left;
+        height: 0.5rem;
+        line-height: 0.5rem; }
+    .song_sheet_warp .song_sheet_box .botton_page {
+      height: 0.3rem; }
+      .song_sheet_warp .song_sheet_box .botton_page div {
+        display: inline-block;
+        color: #f2d57a;
+        width: 1.52rem;
+        font-size: 0.3rem;
+        line-height: 0.3rem;
+        vertical-align: middle;
+        margin: 0 0.2rem; }
+      .song_sheet_warp .song_sheet_box .botton_page .next {
+        text-align: right;
+        background: url(../img/np.png) left center no-repeat;
+        background-size: auto 100%; }
+      .song_sheet_warp .song_sheet_box .botton_page .pr {
+        text-align: left;
+        background: url(../img/pp.png) right center no-repeat;
+        background-size: auto 100%; }
+    .song_sheet_warp .song_sheet_box .stop {
+      height: 3px;
+      background: url(../img/sltb_03.png) 0 0 repeat-x; }
+    .song_sheet_warp .song_sheet_box .song_title {
+      font-size: 0.28rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      color: #f4da8f;
+      position: relative;
+      text-align: left; }
+      .song_sheet_warp .song_sheet_box .song_title .slclose {
+        position: absolute;
+        width: 0.28rem;
+        height: 0.28rem;
+        background: url(../img/slclose.png) center center no-repeat;
+        background-size: auto 100%;
+        right: 0;
+        top: 0.16rem; }
+
 .poster_warp {
   position: absolute;
   width: 100%;
@@ -337,16 +414,16 @@ body, html {
     width: 70%;
     left: 15%;
     position: absolute;
-    top: 10%;
+    top: 5%;
     background: #eeedde;
     text-align: center;
     display: inline-block; }
     .poster_warp .poster_box .close_but {
-      width: 0.59rem;
-      height: 0.57rem;
+      width: 0.4rem;
+      height: 0.4rem;
       position: absolute;
-      right: 0;
-      top: -0.57rem; }
+      right: 3%;
+      top: 5%; }
     .poster_warp .poster_box .piw {
       width: 96%;
       margin-top: 5%;
@@ -373,6 +450,24 @@ body, html {
         left: 0; }
       .poster_warp .poster_box .post_but .share {
         right: 0; }
+
+.song_sheet_warp {
+  display: none; }
+
+.redar_animate {
+  animation: redar_animate 3s ease infinite alternate; }
+
+@keyframes redar_animate {
+  0% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
+.page_mask {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
 
 
 /*# sourceMappingURL=index.css.map*/

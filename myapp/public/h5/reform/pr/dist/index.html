@@ -81,12 +81,16 @@
         </div>
 
     </div>
-
+    <img src="http://129.28.102.212/h5/reform/pr/dist/img/mask_02.png" class="page_mask" alt="">
 </div>
             </div>
             <div class="swiper-slide">
                 <div class="result">
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/redarbg.png" class="bg" alt="">
+    <div class="bgbox">
+            <img src="http://129.28.102.212/h5/reform/pr/dist/img/redarbg.png" class="bg" alt="">
+            <img src="http://129.28.102.212/h5/reform/pr/dist/img/mask_02.png" class="page_mask" alt="">
+    </div>
+    
     <div class="redar_warp">
         <div class="logo">
             <img src="http://129.28.102.212/h5/reform/pr/dist/img/40.png" alt="">
@@ -107,20 +111,70 @@
     </div>
 
     <div class="poster_warp">
-       <div class="mask"></div>
-       <img src="http://129.28.102.212/h5/reform/pr/dist/img/share.png" class="share_point" alt="">
+        <div class="mask"></div>
+        <img src="http://129.28.102.212/h5/reform/pr/dist/img/share.png" class="share_point" alt="">
         <div class="poster_box">
-                <img src="http://129.28.102.212/h5/reform/pr/dist/img/close.png" class="close_but" alt="">
+            <img src="http://129.28.102.212/h5/reform/pr/dist/img/close.png" class="close_but" alt="">
             <div class="piw">
-                    <img src="#" class="poster_img" alt="">
-                    <div class="post_but">
-                        <div class="stone">长按保存</div>
-                        <div class="share">分享</div>
-                    </div>
+                <img src="#" class="poster_img" alt="">
+                <div class="post_but">
+                    <div class="stone">长按保存</div>
+                    <div class="share">分享</div>
+                </div>
             </div>
-               
         </div>
-        
+
+    </div>
+
+    <div class="song_sheet_warp">
+        <div class="mask"></div>
+        <div class="song_sheet_box">
+            <div class="stop"></div>
+            <div class="song_title">
+                时光唱片
+                <div class="slclose"></div>
+            </div>
+            <div class="song_content">
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+                <div class="item_s">
+                    上海滩
+                </div>
+            </div>
+            <div class="botton_page">
+                <div class="pr">
+                    上一页
+                </div>
+                <div class="next">
+                    下一页
+                </div>
+            </div>
+        </div>
     </div>
 </div>
             </div>
@@ -275,15 +329,62 @@
 
     <script>
         var shareData = {
-            title: '我的时光唱片',
+            title: '【测一测，哪一张是属于你的时光唱片】',
             /*分享标题*/
-            desc: '我的时光唱片',
+            desc: '总有一段旋律，能勾起你心底的回忆',
             /*分享描述*/
             img: "https://puui.qpic.cn/vupload/0/20181205_liangliang.jpg/0",
             /*分享图片*/
             link: window.location.href
         };
+
+        var MShare = {
+            WeiXin: function () {
+                WeixinJSBridge.on("menu:share:timeline", function (e) {
+                    var data = {
+                        img_width: "120",
+                        img_height: "120",
+                        img_url: shareData.img,
+                        link: shareData.link,
+                        desc: shareData.desc,
+                        title: shareData.title
+                    };
+                    WeixinJSBridge.invoke("shareTimeline", data, function (res) {
+                        WeixinJSBridge.log(res.err_msg)
+                    })
+                });
+                WeixinJSBridge.on("menu:share:weibo", function () {
+                    WeixinJSBridge.invoke("shareWeibo", {
+                        "content": shareData.desc,
+                        "url": shareData.link
+                    }, function (res) {
+                        WeixinJSBridge.log(res.err_msg)
+                    })
+                });
+                WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+                    WeixinJSBridge.invoke("sendAppMessage", {
+                        img_width: "120",
+                        img_height: "120",
+                        img_url: shareData.img,
+                        link: shareData.link,
+                        desc: shareData.desc,
+                        title: shareData.title
+                    }, function (res) {
+                        WeixinJSBridge.log(res.err_msg)
+                    })
+                })
+            },
+            init: function () {
+                var _this = this;
+                // qqnews
+                document.addEventListener('WeixinJSBridgeReady', function () {
+                    _this.WeiXin()
+                })
+            }
+        };
+
+        MShare.init();
     </script>
-<script type="text/javascript" src="http://129.28.102.212/h5/reform/pr/dist/js/c39c6_index_bundle.js"></script></body>
+<script type="text/javascript" src="http://129.28.102.212/h5/reform/pr/dist/js/bae03_index_bundle.js"></script></body>
 
 </html>
