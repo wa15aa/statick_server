@@ -323,6 +323,7 @@ body, html {
   position: absolute;
   width: 100%;
   height: 100%;
+  display: none;
   text-align: center;
   left: 0;
   top: 0; }
