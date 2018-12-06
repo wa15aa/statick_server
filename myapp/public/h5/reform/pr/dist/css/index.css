@@ -42,6 +42,12 @@ body {
 .clearfix {
   zoom: 1; }
 
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 #aduioDom {
   display: none; }
 
