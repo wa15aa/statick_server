@@ -42,6 +42,9 @@ body {
 .clearfix {
   zoom: 1; }
 
+#aduioDom {
+  display: none; }
+
 .swiper-container, .fscreen, .loading, .result {
   width: 100%;
   height: 100%;
