@@ -125,10 +125,10 @@ body, html {
   bottom: 15%; }
 
 .fscreen .post_news_logo {
-  width: 18%;
+  width: 20%;
   position: absolute;
-  left: 41%;
-  bottom: 10%; }
+  left: 40%;
+  bottom: 5%; }
 
 .swipeAnimate {
   -webkit-animation: swipeAnimate 2s ease-in-out infinite;
@@ -303,7 +303,15 @@ body, html {
       width: 100%; }
   .redar_warp .redar_box {
     text-align: center;
-    padding-top: 1rem; }
+    padding-top: 1rem;
+    position: relative;
+    z-index: 50; }
+    .redar_warp .redar_box .tiptext {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      font-size: 0.3rem;
+      bottom: 10%; }
     .redar_warp .redar_box canvas {
       display: inline-block; }
 
@@ -405,7 +413,8 @@ body, html {
   display: none;
   text-align: center;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
   .poster_warp .mask {
     position: absolute;
     width: 100%;
