@@ -71,7 +71,6 @@ img {
   position: relative; }
 
 .loading {
-  display: none;
   background: #000; }
   .loading .bg {
     width: 100%; }
