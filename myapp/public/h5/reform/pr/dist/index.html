@@ -38,7 +38,7 @@
         }
         var InterfacePrize = 'http://piu.qq.com/wechat/web/api/my/rewards';
     </script>
-<link href="http://129.28.102.212/h5/reform/pr/dist/css/index.css" rel="stylesheet"></head>
+<link href="http://mat1.gtimg.com/news/images/static/2018/reform/index.css" rel="stylesheet"></head>
 
 <body>
 
@@ -49,19 +49,19 @@
             <div class="swiper-slide">
                 <div class="fscreen">
     <div class="audio_tip"></div>
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/postersr_02.png" class="bg" alt="">
+    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/postersr_02.png" class="bg" alt="">
 
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/point.png" alt="" class="swipeAnimate fstips">
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/post_news_logo.png" class="post_news_logo" alt="">
+    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/point.png" alt="" class="swipeAnimate fstips">
+    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/post_news_logo.png" class="post_news_logo" alt="">
 </div>
             </div>
             <div class="swiper-slide">
                 <div class="games">
 
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/game_bg_02.png" class="bg" alt="">
+    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/game_bg_02.png" class="bg" alt="">
 
     <div class="logo">
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/40.png" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/40.png" alt="">
     </div>
 
     <div class="time">
@@ -69,12 +69,12 @@
     </div>
 
     <div class="jukebox">
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/cp.png" class="cp" alt="">
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/cdb.png" class="cdb" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/cp.png" class="cp" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/cdb.png" class="cdb" alt="">
     </div>
 
 
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/mask_02.png" class="page_mask" alt="">
+    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/mask_02.png" class="page_mask" alt="">
 </div>
 
 <div class="song_name">
@@ -90,13 +90,13 @@
             <div class="swiper-slide">
                 <div class="result">
     <div class="bgbox">
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/redarbg.png" class="bg" alt="">
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/mask_02.png" class="page_mask" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/redarbg.png" class="bg" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/mask_02.png" class="page_mask" alt="">
     </div>
 
     <div class="redar_warp">
         <div class="logo">
-            <img src="http://129.28.102.212/h5/reform/pr/dist/img/40.png" alt="">
+            <img src="http://mat1.gtimg.com/news/images/static/2018/reform/40.png" alt="">
         </div>
         <div class="redar_box">
             <div class="tiptext">
@@ -121,9 +121,9 @@
 
     <div class="poster_warp">
         <div class="mask"></div>
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/share.png" class="share_point" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/share.png" class="share_point" alt="">
         <div class="poster_box">
-            <img src="http://129.28.102.212/h5/reform/pr/dist/img/close.png" class="close_but" alt="">
+            <img src="http://mat1.gtimg.com/news/images/static/2018/reform/close.png" class="close_but" alt="">
             <div class="piw">
                 <img src="#" class="poster_img" alt="">
                 <div class="post_tip">
@@ -196,7 +196,7 @@
     </div>
 
     <div class="loading">
-    <img src="http://129.28.102.212/h5/reform/pr/dist/img/loading_02.jpg" class="bg" alt="">
+    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/loading_02.jpg" class="bg" alt="">
 
     <div class="loading_warp">
         <div class="loading_box">
@@ -205,13 +205,13 @@
             </div>
 
             <div class="loading_text">
-                <img src="http://129.28.102.212/h5/reform/pr/dist/img/Loading.png" alt="">
+                <img src="http://mat1.gtimg.com/news/images/static/2018/reform/Loading.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="news_logo">
-        <img src="http://129.28.102.212/h5/reform/pr/dist/img/news_logo.png" alt="">
+        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/news_logo.png" alt="">
     </div>
 </div>
     <!-- 海报模块 -->
@@ -358,6 +358,16 @@
     </script>
 
     <script>
+
+         // 微信打开，自动播放音乐
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                audio.play();
+                });
+            }, false);
+
+
+
         var canvasText = '点我看看';
 
         var shareData = {
@@ -479,7 +489,14 @@
                 [3, '尔中山路略超枫越卡转兮杨里外跨知高周', '2018/火箭少女101', '卡路里', 9, '卡路里我的天敌，燃烧我的卡路里']
             ]
         }
+
+        var liangliang = {
+           title:'凉凉三生三世恍然如梦，须臾的年风干泪痕。',
+            mess:'2017 / 张碧晨',
+            name:'《凉凉》',
+            poster:'https://puui.qpic.cn/vupload/0/20181205_liangliang.jpg/0'
+        }
     </script>
-<script type="text/javascript" src="http://129.28.102.212/h5/reform/pr/dist/js/494cd_index_bundle.js"></script></body>
+<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/js/index_bundle.js"></script></body>
 
 </html>
