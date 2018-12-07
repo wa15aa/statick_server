@@ -107,6 +107,8 @@ body, html {
       position: absolute;
       left: 37%;
       bottom: -0.8rem; }
+      .loading_warp .loading_box .loading_text img {
+        width: 100%; }
 
 .news_logo {
   width: 20%;
