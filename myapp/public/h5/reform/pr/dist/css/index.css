@@ -219,7 +219,7 @@ body, html {
 .song_name {
   position: absolute;
   width: 100%;
-  top: 58%;
+  bottom: 5%;
   z-index: 100; }
   .song_name .enter_box {
     width: 100%;
@@ -254,7 +254,8 @@ body, html {
       margin: 0 0.02rem; }
   .song_name .guess_name {
     width: 80%;
-    margin-left: 10%; }
+    margin-left: 10%;
+    height: 2.82rem; }
     .song_name .guess_name .item {
       width: 0.74rem;
       height: 0.74rem;
