@@ -275,6 +275,9 @@ body, html {
     .song_name .guess_name .hasSelect {
       background: #ffdb6f; }
 
+.song_name_short {
+  bottom: 6%; }
+
 .result .bgbox {
   position: absolute;
   width: 100%;
