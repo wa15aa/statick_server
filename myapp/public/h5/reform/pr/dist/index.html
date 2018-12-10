@@ -42,7 +42,7 @@
 
 <body>
 
-    <audio src="http://mat1.gtimg.com/news/images/static/2018/reform/b_01.mp3" id="aduioDom" preload="auto"></audio>
+    <audio src="http://mat1.gtimg.com/news/images/static/2018/reform/b_01.mp3" id="aduioDom" loop="true" preload="auto"></audio>
 
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -89,6 +89,11 @@
     </div>
 
 </div>
+
+<div class="start_game">
+    <div class="mask"></div>
+    <span class="start_time">3</span>
+</div>
             </div>
             <div class="swiper-slide">
                 <div class="result">
@@ -104,8 +109,8 @@
             <img src="40.png" alt="">
         </div>
         <div class="redar_box">
-            <div class="song_mess" style="font-size: 0.2rem;">1980事实上 《小心心》</div>
-            <img src="https://puui.qpic.cn/vupload/0/20181205_10_9.jpg/0" style="
+            <div class="song_mess" style="font-size: 0.24rem;"></div>
+            <img src="xxxHTMLLINKxxx0.93188938810134610.2713112014584669xxx" style="
                         width: 100%;
                         margin-bottom: 0.1rem;
                     " class="poster_img">
@@ -374,11 +379,11 @@
     <script>
 
          // 微信打开，自动播放音乐
-            // document.addEventListener("WeixinJSBridgeReady", function () {
-            //     WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
-            //     audio.play();
-            //     });
-            // }, false);
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                audio.play();
+                });
+            }, false);
 
 
 
@@ -510,10 +515,11 @@
             name:'《凉凉》',
             poster:'https://puui.qpic.cn/vupload/0/20181205_liangliang.jpg/0'
         }
+        var posterUrl = 'https://puui.qpic.cn/vupload/0/20181205_';
     </script>
-
-<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/jquery.js"></script>
 <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/canvas_x.js"></script>
+<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/jquery.js"></script>
+
 <script type="text/javascript" src="js/index_bundle.js"></script></body>
 
 </html>
