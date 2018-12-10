@@ -42,7 +42,7 @@
 
 <body>
 
-    <audio src="http://mat1.gtimg.com/news/images/static/2018/reform/b_01.mp3" id="aduioDom"></audio>
+    <audio src="http://mat1.gtimg.com/news/images/static/2018/reform/b_01.mp3" id="aduioDom" preload="auto"></audio>
 
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -51,6 +51,9 @@
     <div class="audio_tip"></div>
     <img src="http://mat1.gtimg.com/news/images/static/2018/reform/postersr_02.png" class="bg" alt="">
 
+    <div class="fs_tip">
+        上滑开始听歌猜曲
+    </div>
     <img src="http://mat1.gtimg.com/news/images/static/2018/reform/point.png" alt="" class="swipeAnimate fstips">
     <img src="http://mat1.gtimg.com/news/images/static/2018/reform/post_news_logo.png" class="post_news_logo" alt="">
 </div>
@@ -94,15 +97,28 @@
         <img src="http://mat1.gtimg.com/news/images/static/2018/reform/mask_02.png" class="page_mask" alt="">
     </div>
 
+    <div class="audio_tip"></div>
+
     <div class="redar_warp">
         <div class="logo">
             <img src="http://mat1.gtimg.com/news/images/static/2018/reform/40.png" alt="">
         </div>
         <div class="redar_box">
+            <div class="song_mess" style="font-size: 0.2rem;">1980事实上 《小心心》</div>
+            <img src="https://puui.qpic.cn/vupload/0/20181205_10_9.jpg/0" style="
+                        width: 100%;
+                        margin-bottom: 0.1rem;
+                    " class="poster_img">
+
             <div class="tiptext">
-                点我看看
+                点击查看我的唱片库
             </div>
         </div>
+    </div>
+
+    <div class="song_str">
+        <p class="song_text"></p>
+        <p class="song_name_result"></p>
     </div>
 
     <div class="button_warp">
@@ -110,7 +126,7 @@
             再听一次
         </div>
         <div class="g_poster">
-            查看我的唱片
+            生成我的唱片
         </div>
         <div class="share">
             分享
@@ -189,8 +205,6 @@
         </div>
     </div>
 </div>
-
-
             </div>
         </div>
     </div>
@@ -332,9 +346,9 @@
     <div class="loading_result">
         <div class="mask"></div>
         <div class="result_text">
-            <p>回答错误</p>
+            <p></p>
             <p>根据您的答题结果</p>
-            <p>正在生成雷达图与专属唱片</p>
+            <p>正在生成您的专属唱片</p>
 
             <div class="res_animate_loading">
                  <span class="res_load1">.</span> <span class="res_load2">.</span> 
@@ -360,11 +374,11 @@
     <script>
 
          // 微信打开，自动播放音乐
-            document.addEventListener("WeixinJSBridgeReady", function () {
-                WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
-                audio.play();
-                });
-            }, false);
+            // document.addEventListener("WeixinJSBridgeReady", function () {
+            //     WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+            //     audio.play();
+            //     });
+            // }, false);
 
 
 
@@ -497,6 +511,6 @@
             poster:'https://puui.qpic.cn/vupload/0/20181205_liangliang.jpg/0'
         }
     </script>
-<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/index_bundle.js"></script></body>
+<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/js/index_bundle.js"></script></body>
 
 </html>
