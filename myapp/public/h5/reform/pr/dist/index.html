@@ -19,8 +19,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-title" content="">
     <title>我的时光唱片</title>
-   
-    
+
+
     <script>
         (function () {
             var clientWidth = (document.documentElement || document.body.parentNode).clientWidth;
@@ -38,7 +38,7 @@
         }
         var InterfacePrize = 'http://piu.qq.com/wechat/web/api/my/rewards';
     </script>
-<link href="http://mat1.gtimg.com/news/images/static/2018/reform/index.css" rel="stylesheet"></head>
+<link href="index.css" rel="stylesheet"></head>
 
 <body>
 
@@ -49,22 +49,22 @@
             <div class="swiper-slide">
                 <div class="fscreen">
     <div class="audio_tip"></div>
-    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/postersr_02.png" class="bg" alt="">
+    <img src="postersr_02.png" class="bg" alt="">
 
     <div class="fs_tip">
         上滑开始听歌猜曲
     </div>
-    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/point.png" alt="" class="swipeAnimate fstips">
-    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/post_news_logo.png" class="post_news_logo" alt="">
+    <img src="point.png" alt="" class="swipeAnimate fstips">
+    <img src="post_news_logo.png" class="post_news_logo" alt="">
 </div>
             </div>
             <div class="swiper-slide">
                 <div class="games">
 
-    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/game_bg_02.png" class="bg" alt="">
+    <img src="game_bg_02.png" class="bg" alt="">
 
     <div class="logo">
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/40.png" alt="">
+        <img src="40.png" alt="">
     </div>
 
     <div class="time">
@@ -72,12 +72,12 @@
     </div>
 
     <div class="jukebox">
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/cp.png" class="cp" alt="">
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/cdb.png" class="cdb" alt="">
+        <img src="cp.png" class="cp" alt="">
+        <img src="cdb.png" class="cdb" alt="">
     </div>
 
 
-    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/mask_02.png" class="page_mask" alt="">
+    <img src="mask_02.png" class="page_mask" alt="">
 </div>
 
 <div class="song_name">
@@ -92,25 +92,26 @@
 
 <div class="start_game">
     <div class="mask"></div>
+    <span class="start_tips">歌曲准备中</span>
     <span class="start_time">3</span>
 </div>
             </div>
             <div class="swiper-slide">
                 <div class="result">
     <div class="bgbox">
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/redarbg.png" class="bg" alt="">
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/mask_02.png" class="page_mask" alt="">
+        <img src="redarbg.png" class="bg" alt="">
+        <img src="mask_02.png" class="page_mask" alt="">
     </div>
 
     <div class="audio_tip"></div>
 
     <div class="redar_warp">
         <div class="logo">
-            <img src="http://mat1.gtimg.com/news/images/static/2018/reform/40.png" alt="">
+            <img src="40.png" alt="">
         </div>
         <div class="redar_box">
             <div class="song_mess" style="font-size: 0.24rem;"></div>
-            <img src="xxxHTMLLINKxxx0.06306705924367550.5715435870680781xxx" style="
+            <img src="xxxHTMLLINKxxx0.29882823952955320.07242608970061881xxx" style="
                         width: 100%;
                         margin-bottom: 0.1rem;
                     " class="poster_img">
@@ -142,9 +143,9 @@
 
     <div class="poster_warp">
         <div class="mask"></div>
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/share.png" class="share_point" alt="">
+        <img src="share.png" class="share_point" alt="">
         <div class="poster_box">
-            <img src="http://mat1.gtimg.com/news/images/static/2018/reform/close.png" class="close_but" alt="">
+            <img src="close.png" class="close_but" alt="">
             <div class="piw">
                 <img src="#" class="poster_img" alt="">
                 <div class="post_tip">
@@ -215,7 +216,7 @@
     </div>
 
     <div class="loading">
-    <img src="http://mat1.gtimg.com/news/images/static/2018/reform/loading_02.jpg" class="bg" alt="">
+    <img src="loading_02.jpg" class="bg" alt="">
 
     <div class="loading_warp">
         <div class="loading_box">
@@ -224,13 +225,13 @@
             </div>
 
             <div class="loading_text">
-                <img src="http://mat1.gtimg.com/news/images/static/2018/reform/Loading.png" alt="">
+                <img src="Loading.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="news_logo">
-        <img src="http://mat1.gtimg.com/news/images/static/2018/reform/news_logo.png" alt="">
+        <img src="news_logo.png" alt="">
     </div>
 </div>
     <!-- 海报模块 -->
@@ -351,18 +352,29 @@
     <div class="loading_result">
         <div class="mask"></div>
         <div class="result_text">
-            <p></p>
-            <p>根据您的答题结果</p>
-            <p>正在生成您的专属唱片</p>
+            <p class=""></p>
+            <p class="song_mess_str"></p>
+            <p class="song_ss">根据您的答题结果</p>
+            <p class="song_ss">正在生成您的专属唱片</p>
 
             <div class="res_animate_loading">
-                 <span class="res_load1">.</span> <span class="res_load2">.</span> 
-                 <span class="res_load3">.</span> <span class="res_load4"> .</span>
-                 <span class="res_load5">.</span>
-             </div>
+                <span class="res_load1">.</span> <span class="res_load2">.</span>
+                <span class="res_load3">.</span> <span class="res_load4"> .</span>
+                <span class="res_load5">.</span>
+            </div>
         </div>
 
     </div>
+
+    <!-- 答对弹出提示 -->
+
+    <div class="right_tips">
+        <div class="mask"></div>
+        <div class="right_mess">
+            <div class="right_tips_str"></div>
+        </div>
+    </div>
+
     <!-- 微信分享js -->
 
 
@@ -372,36 +384,42 @@
 
 
     <script src="//res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script src=//mat1.gtimg.com/news/js/static/libs/ppo.1.3.19.min.js></script>
     <script type="text/javascript">
         var jsApiList = ['onMenuShareTimeline', 'onMenuShareAppMessage'];
     </script>
 
     <script>
+        var u = navigator.userAgent;
+        // var isIOS = !!u.match(/(i[^;]+;(U;)?CPU.+Mac OS X/); 
+        //ios终端
+        // var isIOS = !!u.match(/(i[^;]+;( U;)? CPU.+Mac OS X/);
+        var isIOS = /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent);
+        if (isIOS) {
 
-         // 微信打开，自动播放音乐
             document.addEventListener("WeixinJSBridgeReady", function () {
                 WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
-                audio.play();
+                    audio.play();
                 });
             }, false);
-
-
+        }
 
         var canvasText = '点我看看';
 
         var shareData = {
-            title: '【测一测，哪一张是属于你的时光唱片】',
+            title: '猜疯了！这个音乐测试有毒，我也就玩了10多遍！',
             /*分享标题*/
-            desc: '总有一段旋律，能勾起你心底的回忆',
+            desc: '据说只有5%的人能全对',
             /*分享描述*/
-            img: "https://puui.qpic.cn/vupload/0/20181205_liangliang.jpg/0",
+            img: "https://puui.qpic.cn/vupload/0/20181211_80_1.jpg/0",
             /*分享图片*/
             link: window.location.href
         };
 
 
         function customShareTitle(sName) {
-            return '【我的专属时光唱片是《' + sName + '》，点开测测你的是什么】'
+            // return '我的专属时光唱片是《' + sName + '》，点开测测你的是什么';
+            return '40年来最流行的歌我听出了' + sSheet.length + '首，不服就来挑战吧！';
         }
 
         var MShare = {
@@ -449,78 +467,213 @@
             }
         };
 
+        //  MShare.init();
+        var UA = function () {
+            var a = navigator.userAgent.toLowerCase();
+            return {
+                ipad: /ipad/.test(a),
+                iphone: /iphone/.test(a),
+                android: /android/.test(a),
+                qqnews: /qqnews/.test(a),
+                weixin: /micromessenger/.test(a),
+                qqnews_version: a.match(/qqnews/i) == "qqnews" ? a.split('qqnews/')[1] : ''
+            }
+        };
+
+        function shareQQNews() {
+            var a = UA();
+            switch (true) {
+                case a.qqnews:
+                    if (window.TencentNews && window.TencentNews.setShareArticleInfo) {
+                        //alert(1)
+                        window.TencentNews.setShareArticleInfo(shareData.title, shareData.title, shareData.desc,
+                            shareData.link, shareData.img)
+                    }
+                    if (window.TencentNews && window.TencentNews.showShareMenu) {
+                        //alert(2)
+                        // window.TencentNews.showShareMenu(shareData.link, shareData.title, shareData.desc, shareData.img, "news_news_wc")
+                    } else {
+                        //alert(3)
+                        //alert(window.TencentNews);
+                        if (UA().android) {
+                            window.TencentNews.shareFromWebView(shareData.title, shareData.desc, shareData.img)
+                        }
+                        // window.TencentNews.shareFromWebView(shareData.title, shareData.desc, shareData.img)
+                    }
+                    break;
+                case a.weixin:
+                    //alert(4)
+                    var b = document.querySelector(".weixin_layout");
+                    b.style.display = "block";
+                    b.addEventListener("click", function () {
+                        b.style.display = "none"
+                    });
+                    break;
+                default:
+                    //alert(5)
+                    window.location = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=801378464&url=" +
+                        shareData.link + "&title=" + shareData.desc + "&pic=" + shareData.img + "&des=" + shareData.title;
+                    break
+            }
+        };
+
+        function onBridgeReady() {
+            WeixinJSBridge.on("menu:share:timeline", function (e) {
+                var b = {
+                    img_width: "120",
+                    img_height: "120",
+                    img_url: shareData.img,
+                    link: shareData.link,
+                    desc: shareData.desc,
+                    title: shareData.title
+                };
+                WeixinJSBridge.invoke("shareTimeline", b, function (a) {
+                    WeixinJSBridge.log(a.err_msg)
+                })
+            });
+            WeixinJSBridge.on("menu:share:weibo", function () {
+                WeixinJSBridge.invoke("shareWeibo", {
+                    "content": shareData.desc,
+                    "url": shareData.link
+                }, function (a) {
+                    WeixinJSBridge.log(a.err_msg)
+                })
+            });
+            WeixinJSBridge.on('menu:share:appmessage', function (b) {
+                WeixinJSBridge.invoke("sendAppMessage", {
+                    img_width: "120",
+                    img_height: "120",
+                    img_url: shareData.img,
+                    link: shareData.link,
+                    desc: shareData.desc,
+                    title: shareData.title
+                }, function (a) {
+                    WeixinJSBridge.log(a.err_msg)
+                })
+            })
+        };
+
+        function androidQQNewsShare() {
+            var a = document.getElementsByTagName('body')[0];
+            var b = document.createElement('script');
+            b.type = 'text/javascript';
+            b.src = '//mat1.gtimg.com/www/js/newsapp/jsapi/news.js?_tsid=1';
+            a.appendChild(b)
+            b.onload = function () {
+                // alert(13)
+                shareQQNews();
+            }
+        }
+
+        var MShare = {}
+
+        MShare.init = function () {
+            if (ppo.isNewsApp()) {
+                if (UA().android) {
+
+                    androidQQNewsShare()
+
+                } else {
+                    if (window.TencentNews) {
+                        shareQQNews();
+                    } else {
+                        document.addEventListener('TencentNewsJSInjectionComplete',
+                            function () {
+
+                                shareQQNews();
+                            })
+                    }
+                }
+
+            }
+
+            document.addEventListener('WeixinJSBridgeReady', function () {
+                onBridgeReady()
+            });
+
+        };
+
         MShare.init();
-
-
 
         //歌曲信息配置
 
 
         var songData = {
             '80': [
-                [2, '一别音容两恋玄村四月闲少渺著乡关即束', '1979/李谷一', '乡恋', 1, '你的身影你的歌声，永远印在我的心中。'],
-                [3, '我中童心滩永清上乐浪时沙海夜大健潭爱', '1980/叶丽仪', '上海滩', 2, '浪奔浪流，万里涛涛江水永不休。'],
-                [5, '光景尤宜的少阳不阴与俪偕故当南游事甚', '1981/罗大佑', '光阴的故事', 3, '流水它带走光阴的故事改变了一个人。'],
-                [7, '万岁山里珠永膁外长跨知不城太息以倒次', '1982/叶振堂', '万里长城永不倒', 4, '万里长城永不倒千里黄河水滔滔'],
-                [3, '鞭直渡剪河洛蜡成梅天著意花影里送一行', '1983/费玉清', '一剪梅', 5, '爱我所爱，无怨无悔，此情长留心间'],
-                [4, '舍淹逸今造日新宵子难夜活天直为忘萧艾', '1984/李谷一', '难忘今宵', 6, '难忘今宵，难忘今宵无论天涯与海角，神州万里同怀抱'],
-                [5, '无日明时更何寒酒天转头去展龙韬好会略', '1985/华语群星', '明天会更好', 7, '谁能忍心看那昨日的忧愁带走我们的笑容'],
-                [5, '君文我锦相何欢在云真薄只你痴乎不自惜', '1986/邓丽君', '我只在乎你', 8, '任时光匆匆流去我只在乎你'],
-                [6, '的双粉髻中色藕香残玉忆橘映回山红远近', '1987/韩宝仪', '粉红色的回忆', 9, '夏天夏天悄悄过去留下小秘密压心底压心底不能告诉你'],
-                [2, '公子兮徒思忧我明朝行乡去情念四月闲愁', '1988/毛阿敏', '思念', 10, '你从哪里来，我的朋友好像一只蝴蝶飞进我的窗口'],
-                [3, '月冰师僧才一子生玉水花如云莫孤三夜鲁', '1989/甄妮', '鲁冰花', 11, '天上的眼睛眨呀眨妈妈的心啊鲁冰花']
+                [3, '者蜜苦珊青炬来人甜好烛花光蜜夜', '1979/邓丽君', '甜蜜蜜', 1, '甜蜜蜜，你笑得甜蜜蜜，好像花儿开在春风里。'],
+                [3, '我中童心滩永清上浪时沙海夜大潭', '1980/叶丽仪', '上海滩', 2, '浪奔浪流，万里涛涛江水永不休。'],
+                [5, '光景宜的少阳不阴与俪故当南游事', '1981/罗大佑', '光阴的故事', 3, '流水它带走光阴的故事改变了一个人。'],
+                [7, '万山里珠永膁外长知不城太息以倒', '1982/叶振棠', '万里长城永不倒', 4, '万里长城永不倒，千里黄河水滔滔。'],
+                [2, '一别音容两恋玄村月闲少渺著乡关', '1983/李谷一', '乡恋', 5, '你的身影你的歌声，永远印在我的心中。'],
+                [3, '直渡剪河洛梅蜡成天意花影里一送', '1984/费玉清', '一剪梅', 6, '爱我所爱，无怨无悔，此情长留心间。'],
+                [5, '无日明时更何寒酒天头去展韬好会', '1985/华语群星', '明天会更好', 7, '谁能忍心看那昨日的忧愁，带走我们的笑容。'],
+                [6, '君满让锦相何世在真界只你充自爱', '1986/群星', '让世界充满爱', 8, '轻轻地捧着你的脸，为你把眼泪擦干。'],
+                [6, '的双粉髻中色香玉忆橘映回山红远', '1987/韩宝仪', '粉红色的回忆', 9, '夏天夏天悄悄过去留下小秘密，压心底压心底不能告诉你。'],
+                [2, '公子兮徒思忧我朝行乡去情念四月', '1988/毛阿敏', '思念', 10, '你从哪里来，我的朋友，好像一只蝴蝶飞进我的窗口。'],
+                [3, '月冰师僧才一生玉水花如云孤夜鲁', '1989/甄妮', '鲁冰花', 11, '天上的眼睛眨呀眨，妈妈的心啊鲁冰花。']
 
             ],
             '90': [
-                [4, '洲咍尔风徒劳上百花如亚绣姿逸态何雄崒', '1990/韦唯', '亚洲雄风', 1, '我们亚洲，山是高昂的头我们亚洲，河像热血流'],
-                [5, '儿本自重当行强罗列男金钟年戏马重东徐', '1991/林子祥', '男儿当自强', 2, '让海天为我聚能量,去开天辟地为我理想去闯'],
-                [6, '君莫你画眉痴一情多祝亦路风白鹭上顺天', '1992/吴奇隆', '祝你一路顺风', 3, '深深地祝福你，最亲爱的朋友祝你一路顺风'],
-                [4, '燕双阔归海栋论高谈天不容旋空回龙驭念', '1993/BEYOND', '海阔天空', 4, '原谅我这一生不羁放纵爱自由也会怕有一天会跌倒'],
-                [4, '衷肠你犹未说指下桌千古意教人的同对他', '1994/老狼', '同桌的你', 5, '我也是偶然翻相片才想起同桌的你'],
-                [3, '成衫归有天来时雪满天山路去伴河且种花', '1995/胡兵', '归去来', 6, '想让你忘却愁绪忘记关怀放开这纷纷扰扰自由自在'],
-                [3, '笔已凌枚健赋乐亭歌种此建尽桃花扇底康', '1996/范晓萱', '健康歌', 7, '抖抖手啊抖抖脚啊勤做深呼吸学爷爷唱唱跳跳我也不会老'],
-                [3, '国梦余消中朝朝人酒未苏青生代看心已华', '1997/刘德华', '中国人', 8, '昂首向前走让世界知道我们都是中国人'],
-                [3, '伴仙郎结桂歌皇重色好倾国尽桃花扇汉风', '1998/刘欢', '好汉歌', 9, '路见不平一声吼该出手时就出手'],
-                [2, '汉鞍马后逡巡时浦口云随未雁依稀南来阵', '1999/刘若英', '后来', 10, '后来终于在眼泪中明白有些人一旦错过就不在'],
+                [4, '洲尔风徒劳上百如亚绣姿逸态何雄', '1990/韦唯', '亚洲雄风', 1, '我们亚洲，山是高昂的头。我们亚洲，河像热血流。'],
+                [5, '儿自重当行强列男金钟年戏马重东', '1991/林子祥', '男儿当自强', 2, '让海天为我聚能量,去开天辟地为我理想去闯。'],
+                [2, '君莫你画水痴一情多亦路手白上顺', '1992/郑智化', '水手', 3, '他说风雨中这点痛算什么，擦干泪不要怕，至少我们还有梦。'],
+                [4, '双阔归海栋论高谈天容旋空回龙驭', '1993/BEYOND', '海阔天空', 4, '原谅我这一生不羁放纵爱自由，也会怕有一天会跌倒。'],
+                [4, '肠你犹未指下桌千古意的教人同对', '1994/老狼', '同桌的你', 5, '我也是偶然翻相片，才想起同桌的你。'],
+                [2, '成衫有地火时雪满山路去过河种花', '1995/张信哲', '过火', 6, '既然爱难分是非，就别逃避勇敢面对。'],
+                [3, '健笔凌枚赋乐亭歌种建桃花扇底康', '1996/范晓萱', '健康歌', 7, '抖抖手啊抖抖脚啊勤做深呼吸，学爷爷唱唱跳跳我也不会老。'],
+                [3, '国梦余消朝人未苏青生代心中已华', '1997/刘德华', '中国人', 8, '昂首向前走，让世界知道我们都是中国人。'],
+                [3, '仙郎结桂歌皇重好倾国尽桃花汉风', '1998/刘欢', '好汉歌', 9, '路见不平一声吼，该出手时就出手。'],
+                [2, '汉鞍马后巡时浦口云未雁依稀南来', '1999/刘若英', '后来', 10, '后来终于在眼泪中明白，有些人一旦错过就不在。'],
 
             ],
             '00': [
-                [5, '你无言至不闻还对花少醉梦川应君生有她', '2000/林忆莲', '至少还有你', 1, '如果全世界我也可以放弃至少还有你值得我去珍惜'],
-                [3, '北云是晓流楼活军都战洮雷星知江月雨何', '2001/F4', '流星雨', 2, '陪你去看流星雨落在这地球上让你的泪落在我肩膀'],
-                [4, '你道何时太平生机一脉安息耳洗颍川有水', '2002/水木年华', '一生有你', 3, '你能否感受我的爱等到老去那一天'],
-                [7, '定翅君的傲着我女中挥地仙骄孩前膀拟娇', '2003/容祖儿', '挥着翅膀的女孩', 4, '你曾经对我说做勇敢的女孩我不会孤单，因为你都在'],
-                [5, '鼠伏荒村大雨鸳老把鸯两爱头书画米满小', '2004/杨臣刚', '老鼠爱大米', 5, '只要能让你开心我什么都愿意这样爱你'],
-                [2, '红英尽天苔院长人倦空思旧隔银路犹可借', '2005/韩红', '天路', 6, '那是一条神奇的天路带我们走进人间天堂'],
-                [4, '音先动吉花期烟葱郁祥门庭炬宝莲三万条', '2006/布仁巴雅尔', '吉祥三宝', 7, '叶子绿了什么时候开花等夏天来了'],
-                [4, '里缘中境千移之有诗忙是内物元知等外尘', '2007/周杰伦', '千里之外', 8, '沉默年代 或许不该 太遥远的相爱'],
-                [5, '北客来迎未识洲瓜欢你水间声浮动建京宫', '2008/刘欢', '北京欢迎你', 9, '北京欢迎你为你开天辟地流动中的魅力充满着朝气'],
-                [5, '白下长族佳人乌珠最戈光转炫朝风养天民', '2009/凤凰传奇', '最炫民族风', 10, '你是我天边最美的云彩让我用心把你留下来'],
+                [5, '你无言至不还对花少梦川应生有她', '2000/林忆莲', '至少还有你', 1, '如果全世界我也可以放弃，至少还有你值得我去珍惜。'],
+                [3, '北云星是晓流活军都洮雷知月雨何', '2001/F4', '流星雨', 2, '陪你去看流星雨落在这地球上，让你的泪落在我肩膀。'],
+                [4, '你道何时木平生一年息华洗川有水', '2002/水木年华', '一生有你', 3, '你能否感受我的爱，等到老去那一天。'],
+                [7, '定翅君的傲着女中挥地仙骄孩前膀', '2003/容祖儿', '挥着翅膀的女孩', 4, '你曾经对我说做勇敢的女孩，我不会孤单，因为你都在。'],
+                [5, '鼠伏荒村大雨老鸯两爱书画米满小', '2004/杨臣刚', '老鼠爱大米', 5, '只要能让你开心我什么都愿意，这样爱你。'],
+                [2, '红英尽天苔院长人空旧隔银路犹借', '2005/韩红', '天路', 6, '那是一条神奇的天路，带我们走进人间天堂。'],
+                [4, '音吉动花期烟葱郁祥庭炬宝莲三条', '2006/布仁巴雅尔', '吉祥三宝', 7, '叶子绿了什么时候开花？等夏天来了。'],
+                [4, '缘里境千移之有诗忙是内元等外尘', '2007/周杰伦', '千里之外', 8, '沉默年代，或许不该，太遥远的相爱。'],
+                [5, '北客来迎未识洲欢你水声浮动京宫', '2008/刘欢', '北京欢迎你', 9, '北京欢迎你为你开天辟地，流动中的魅力充满着朝气。'],
+                [5, '白下长族佳人乌最戈光炫朝风养民', '2009/凤凰传奇', '最炫民族风', 10, '你是我天边最美的云彩，让我用心把你留下来。'],
             ],
             '10': [
-                [2, '下凌宵百尺时语闭门奇正字字传文古笃好', '2010/李建', '传奇', 1, '只是因为在人群中，多看了你一眼再也没能忘掉你容颜'],
-                [3, '去风情应不孩何不带老吴钩其书男添其道', '2011/筷子兄弟', '老男孩', 2, '青春如同奔流的江河一去不回来不及道别'],
-                [5, '中醉倒我能歌声齐祝百千龄湖里深的隐家', '2012/曲婉婷', '我的歌声里', 3, '你存在，我深深的脑海里'],
-                [5, '去江口空守爸爸船白了书来儿童相见哪识', '2013/群星', '爸爸去哪儿', 4, '老爸，老爸，我们去哪里呀有我在就天不怕地不怕'],
-                [3, '溪鸥鹭静果拳风起水苹东平应小家生凤雏', '2014/筷子兄弟', '小苹果', 5, '你是我的小呀小苹果儿怎么爱你都不嫌多'],
-                [2, '一风灯成沫笑雾濡云真得动雨泡不影如山', '2015/邓紫棋', '泡沫', 6, '爱本是泡沫如果能够看破'],
-                [2, '是败非生都喜将万字平戎策女装成真相似', '2016/赵雷', '成都', 7, '让我依依不舍的，不止你的温柔'],
-                [5, '我闻琵大样息压方占其维们不抚一壮详兮', '2017/大壮', '我们不一样', 8, '我们不一样每个人都有不同的境遇'],
-                [3, '尔中山路略超枫越卡转兮杨里外跨知高周', '2018/火箭少女101', '卡路里', 9, '卡路里我的天敌，燃烧我的卡路里']
+                [2, '下凌宵百尺时闭门奇正字传文古好', '2010/王菲', '传奇', 1, '只是因为在人群中，多看了你一眼再也没能忘掉你容颜。'],
+                [3, '去风孩情应不何人老带吴钩其书男', '2011/筷子兄弟', '老男孩', 2, '青春如同奔流的江河，一去不回来不及道别。'],
+                [5, '醉倒我能歌声齐祝百千湖里深的家', '2012/曲婉婷', '我的歌声里', 3, '你存在，我深深的脑海里。'],
+                [5, '去口空守爸船白了爸书来儿相哪识', '2013/群星', '爸爸去哪儿', 4, '老爸，老爸，我们去哪里呀？有我在就天不怕地不怕。'],
+                [3, '溪鸥静果拳风起水苹平应小家生凤', '2014/筷子兄弟', '小苹果', 5, '你是我的小呀小苹果儿，怎么爱你都不嫌多。'],
+                [4, '一路灯成凡雾濡云平得动雨泡之山', '2015/朴树', '平凡之路', 6, '我曾经跨过山和大海，也穿过人山人海。'],
+                [2, '是非生都喜将万平戎策装成真相似', '2016/赵雷', '成都', 7, '让我依依不舍的，不止你的温柔。'],
+                [5, '我闻琵大样息方占维们不抚一壮详', '2017/大壮', '我们不一样', 8, '我们不一样，每个人都有不同的境遇。'],
+                [3, '尔中山路略超越卡转杨里外跨知高', '2018/火箭少女101', '卡路里', 9, '卡路里我的天敌，燃烧我的卡路里。']
             ]
         }
 
         var liangliang = {
-           title:'凉凉三生三世恍然如梦，须臾的年风干泪痕。',
-            mess:'2017 / 张碧晨',
-            name:'《凉凉》',
-            poster:'https://puui.qpic.cn/vupload/0/20181205_liangliang.jpg/0'
+            title: '如果有缘，我们会再遇见。',
+            mess: '2015 / 邓紫棋',
+            name: '《再见》',
+            poster: 'https://puui.qpic.cn/vupload/0/20181211_t_zaijian.JPG.jpeg/0'
         }
-        var posterUrl = 'https://puui.qpic.cn/vupload/0/20181205_';
-        var defaultSong = 'http://mat1.gtimg.com/news/images/static/2018/reform/liangliang.mp3';
-    </script>
-<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/canvas_x.js"></script>
-<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/jquery.js"></script>
+        var posterUrl = 'https://puui.qpic.cn/vupload/0/20181212_';
+        var defaultSong = 'http://mat1.gtimg.com/news/images/static/2018/reform/zaijian.mp3';
+        var sNStr = '——'
+        var posterBg = 'https://puui.qpic.cn/vupload/0/20181213_1.png/0';
+          //获取歌曲信息字符串
 
-<script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/js/index_bundle.js"></script></body>
+        function getSongMess(obj) {
+            return   obj[2].slice(0, obj[2].indexOf('/')) + '年' + '《' + obj[3] + '》 ';
+        }
+
+        function getRightSongMess(obj) {
+            return   obj[2].slice(0, obj[2].indexOf('/')) + '年' + '《' + obj[3] + '》 ';
+        }
+    </script>
+    <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/canvas_x.js"></script>
+    <script type="text/javascript" src="http://mat1.gtimg.com/news/images/static/2018/reform/jquery.js"></script>
+
+<script type="text/javascript" src="js/index_bundle.js"></script></body>
 
 </html>
